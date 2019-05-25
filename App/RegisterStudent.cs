@@ -4,9 +4,9 @@ namespace App
 {
     public class RegisterStudent : IUseCase
     {
-        private readonly IStudentRepository _studentRepository;
+        private readonly IStudentRegistrationRepository _studentRepository;
 
-        public RegisterStudent(IStudentRepository studentRepository)
+        public RegisterStudent(IStudentRegistrationRepository studentRepository)
         {
             _studentRepository = studentRepository;
         }

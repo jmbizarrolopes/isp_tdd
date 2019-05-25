@@ -24,7 +24,7 @@ namespace Tests
             });
         }
 
-        private class StudentRepositoryStub : IStudentRepository
+        private class StudentRepositoryStub : IStudentRegistrationRepository
         {
             private IList<Student> _studentsList;
 
@@ -43,22 +43,6 @@ namespace Tests
 
             public void Register(Student student)
             {
-                throw new System.NotImplementedException();
-            }
-
-            public Student Get(string registration)
-            {
-                throw new System.NotImplementedException();
-            }
-
-            public void Update(Student student)
-            {
-                throw new System.NotImplementedException();
-            }
-
-            public void CancelRegistration(string registration)
-            {
-                throw new System.NotImplementedException();
             }
         }
     }

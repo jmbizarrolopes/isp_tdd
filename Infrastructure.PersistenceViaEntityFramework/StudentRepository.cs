@@ -3,7 +3,8 @@ using Domain;
 
 namespace Infrastructure.PersistenceViaEntityFramework
 {
-    public class StudentRepository : IStudentRepository
+    public class StudentRepository : IStudentRegistrationRepository, IStudentEditionRepository, 
+        IStudentRegistrationCancellationRepository
     {
         public StudentRepository()
         {

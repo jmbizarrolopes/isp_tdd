@@ -24,7 +24,7 @@ namespace Tests
             });
         }
         
-        private class StudentRepositoryStub : IStudentRepository
+        private class StudentRepositoryStub : IStudentEditionRepository
         {
             private IList<Student> _studentsList;
 
@@ -35,16 +35,6 @@ namespace Tests
                     new Student("REG002", "John Smith", new DateTime(1993, 10, 15))
                 };
             }
-            
-            public Student Exists(string registration)
-            {
-                throw new System.NotImplementedException();
-            }
-
-            public void Register(Student student)
-            {
-                throw new System.NotImplementedException();
-            }
 
             public Student Get(string registration)
             {
@@ -53,11 +43,6 @@ namespace Tests
 
             public void Update(Student student)
             {
-            }
-
-            public void CancelRegistration(string registration)
-            {
-                throw new System.NotImplementedException();
             }
         }
     }

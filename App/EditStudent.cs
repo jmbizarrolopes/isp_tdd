@@ -2,9 +2,9 @@ namespace App
 {
     public class EditStudent : IUseCase
     {
-        private readonly IStudentRepository _studentRepository;
+        private readonly IStudentEditionRepository _studentRepository;
 
-        public EditStudent(IStudentRepository studentRepository)
+        public EditStudent(IStudentEditionRepository studentRepository)
         {
             _studentRepository = studentRepository;
         }

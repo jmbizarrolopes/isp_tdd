@@ -22,7 +22,7 @@ namespace Tests
             });
         }
         
-        private class StudentRepositoryStub : IStudentRepository
+        private class StudentRepositoryStub : IStudentRegistrationCancellationRepository
         {
             private IList<Student> _studentsList;
 
@@ -37,21 +37,6 @@ namespace Tests
             public Student Exists(string registration)
             {
                 return _studentsList.FirstOrDefault(s => s.Registration.Equals(registration));
-            }
-
-            public void Register(Student student)
-            {
-                throw new System.NotImplementedException();
-            }
-
-            public Student Get(string registration)
-            {
-                throw new System.NotImplementedException();
-            }
-
-            public void Update(Student student)
-            {
-                throw new System.NotImplementedException();
             }
 
             public void CancelRegistration(string registration)

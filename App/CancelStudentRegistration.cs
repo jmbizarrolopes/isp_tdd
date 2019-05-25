@@ -2,9 +2,9 @@ namespace App
 {
     public class CancelStudentRegistration : IUseCase
     {
-        private readonly IStudentRepository _studentRepository;
+        private readonly IStudentRegistrationCancellationRepository _studentRepository;
 
-        public CancelStudentRegistration(IStudentRepository studentRepository)
+        public CancelStudentRegistration(IStudentRegistrationCancellationRepository studentRepository)
         {
             _studentRepository = studentRepository;
         }
